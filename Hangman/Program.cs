@@ -42,7 +42,7 @@ namespace Hangman
             int numberOfGuesses = 0;
             Console.WriteLine($"You have {guessesRemaining} guesses remaining. Chose wisely:)");
             
-            while (numberOfGuesses <= MAXIMUM_GUESSES)
+            while (numberOfGuesses <= MAXIMUM_GUESSES && guessesRemaining > 0)
             {
                 Console.Write("\nPlease enter a single letter you wanna guess: ");
                 string userInput = Console.ReadLine().ToLower();
